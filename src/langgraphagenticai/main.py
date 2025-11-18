@@ -21,12 +21,17 @@ def load_langgraph__agenticai_app():
     
     user_message = st.chat_input("Enter your message")
 
-    if user_message:
-        try:
-            obj_llm_config = GroqLLM(user_controls_input= user_input)
-            model = obj_llm_config.get_llm_model()
-            if not model:
-                st.error("LLM MODEL COULD NOT BE INITIALIZED")
-                return
+    # if user_message:
+    #     try:
+    #         obj_llm_config = GroqLLM(user_controls_input= user_input)
+    #         model = obj_llm_config.get_llm_model()
+    #         if not model:
+    #             st.error("LLM MODEL COULD NOT BE INITIALIZED")
+    #             return
             
-            usecase = user_input.get("")
+    #         usecase = user_input.get("Selected_Usecase")
+    #         if not usecase:
+    #             st.error("NO USECASE SELECTED")
+    #             return 
+    #     except:
+
